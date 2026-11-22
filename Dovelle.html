@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOVELLE | Order. Pay. We Deliver — Aba, Abia State</title>
+  <link rel="icon" type="image/jpeg" href="icon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange: #ff5e00;
+      --orange-dark: #e04f00;
+      --orange-light: #fff3eb;
+      --black: #111111;
+      --dark-card: #1a1a1a;
+      --white: #ffffff;
+      --gray-bg: #f8f9fa;
+      --gray-border: #e5e7eb;
+      --text-muted: #555555;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    /* TOP TRUST BAR */
+    .top-bar {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      border-bottom: 2px solid var(--orange);
+    }
+
+    .top-bar span {
+      color: var(--orange);
+      font-weight: 800;
+    }
+
+    /* HEADER & NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: var(--white);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 14px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--black);
+    }
+
+    .brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 2px solid var(--orange);
+      padding: 2px;
+      background: var(--white);
+    }
+
+    .brand-text h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--black);
+      line-height: 1.1;
+    }
+
+    .brand-text p {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      padding: 11px 18px;
+      font-size: 0.92rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: var(--white);
+      box-shadow: 0 6px 16px rgba(255, 94, 0, 0.25);
+    }
+
+    .btn-orange:hover {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-black {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .btn-black:hover {
+      background: #2b2b2b;
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--black);
+      border: 2px solid var(--black);
+    }
+
+    .btn-outline:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .cart-badge {
+      background: var(--white);
+      color: var(--orange);
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #111111 0%, #1e1e1e 65%, #2b1407 100%);
+      color: var(--white);
+      padding: 64px 5%;
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero-container {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 94, 0, 0.18);
+      border: 1px solid var(--orange);
+      color: var(--orange);
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      margin-bottom: 14px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .hero h2 span {
+      color: var(--orange);
+    }
+
+    .hero-slogan {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 18px;
+      letter-spacing: 0.8px;
+    }
+
+    .hero-description {
+      background: rgba(255, 255, 255, 0.06);
+      border-left: 4px solid var(--orange);
+      padding: 18px 20px;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.98rem;
+      color: #f1f1f1;
+      margin-bottom: 24px;
+      line-height: 1.75;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: var(--white);
+      color: var(--black);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      border-top: 6px solid var(--orange);
+    }
+
+    .hero-card img {
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .hero-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .hero-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+
+    .trust-pills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      text-align: left;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .trust-pill {
+      background: var(--orange-light);
+      color: var(--black);
+      padding: 8px 10px;
+      border-radius: 8px;
+      border-left: 3px solid var(--orange);
+    }
+
+    /* DELIVERY WINDOWS (BOLD & HIGH VISIBILITY) */
+    .windows-section {
+      padding: 50px 5%;
+      background: var(--orange-light);
+      border-bottom: 2px solid #ffd8c2;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 32px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+
+    .section-header h2 span {
+      color: var(--orange);
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .windows-grid {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .window-box {
+      background: var(--black);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      border: 3px solid var(--orange);
+      box-shadow: var(--shadow);
+    }
+
+    .window-box .tag {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .window-box h3 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: var(--white);
+    }
+
+    .window-box p {
+      font-size: 1.08rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .window-box p span {
+      color: var(--orange);
+    }
+
+    /* MENU SECTION */
+    .menu-section {
+      padding: 64px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+      gap: 26px;
+    }
+
+    .food-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s ease, border-color 0.22s ease;
+    }
+
+    .food-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--orange);
+    }
+
+    .food-img-wrap {
+      width: 100%;
+      height: 215px;
+      background: #f3f3f3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .food-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .price-tag {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: var(--black);
+      color: var(--white);
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.98rem;
+      border: 2px solid var(--orange);
+    }
+
+    .food-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .food-body h3 {
+      font-size: 1.18rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--black);
+    }
+
+    .food-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .food-body .btn {
+      width: 100%;
+    }
+
+    /* DELIVERY ZONES SECTION */
+    .zones-section {
+      background: var(--black);
+      color: var(--white);
+      padding: 64px 5%;
+    }
+
+    .zones-section .section-header h2 {
+      color: var(--white);
+    }
+
+    .zones-section .section-header p {
+      color: #cccccc;
+    }
+
+    .zones-grid {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .zone-card {
+      background: var(--dark-card);
+      border: 1px solid #333;
+      border-top: 4px solid var(--orange);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .zone-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .zone-card-header h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    .zone-price {
+      background: var(--orange);
+      color: var(--white);
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+    }
+
+    .zone-card p {
+      color: #dddddd;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    /* CONTACT & FOOTER */
+    footer {
+      background: var(--white);
+      color: var(--black);
+      border-top: 4px solid var(--orange);
+      padding: 50px 5% 28px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+
+    .footer-brand img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-top: 6px;
+    }
+
+    .footer-contact h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: var(--orange);
+    }
+
+    .contact-item {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .contact-item a {
+      color: var(--black);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact-item a:hover {
+      color: var(--orange);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid var(--gray-border);
+      padding-top: 20px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* ORDER BAG DRAWER */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1000;
+      display: none;
+      justify-content: flex-end;
+    }
+
+    .drawer-overlay.active {
+      display: flex;
+    }
+
+    .order-bag {
+      width: 100%;
+      max-width: 460px;
+      background: var(--white);
+      height: 100%;
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: -10px 0 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .bag-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--black);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .bag-header h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .close-btn {
+      background: var(--black);
+      color: var(--white);
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .cart-items {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--gray-border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background: var(--gray-bg);
+    }
+
+    .cart-item-info h4 {
+      font-size: 0.96rem;
+      font-weight: 800;
+    }
+
+    .cart-item-info p {
+      font-size: 0.85rem;
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid var(--black);
+      background: var(--white);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .qty-btn:hover {
+      background: var(--orange);
+      color: var(--white);
+      border-color: var(--orange);
+    }
+
+    /* CHECKOUT FORM INSIDE ORDER BAG */
+    .checkout-form {
+      background: var(--gray-bg);
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid var(--gray-border);
+    }
+
+    .checkout-form h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: var(--black);
+      border-left: 4px solid var(--orange);
+      padding-left: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--black);
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 8px;
+      border: 1.5px solid #cccccc;
+      font-size: 0.94rem;
+      font-weight: 600;
+      background: var(--white);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+
+    .zone-preview-box {
+      background: var(--orange-light);
+      border: 1.5px solid var(--orange);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 14px;
+      display: none;
+    }
+
+    .zone-preview-box.visible {
+      display: block;
+    }
+
+    .zone-preview-box .fee-line {
+      font-weight: 800;
+      color: var(--orange-dark);
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .zone-preview-box .places-line {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--black);
+    }
+
+    .totals-box {
+      background: var(--black);
+      color: var(--white);
+      padding: 16px;
+      border-radius: 10px;
+      margin: 16px 0;
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+      color: #dddddd;
+    }
+
+    .total-row.grand {
+      border-top: 1px solid #444;
+      padding-top: 10px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--orange);
+    }
+
+    .pay-notice {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    /* ACCOUNT MODAL (USERNAME & PASSWORD ONLY) */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      z-index: 1100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .auth-card {
+      background: var(--white);
+      width: 100%;
+      max-width: 410px;
+      border-radius: var(--radius);
+      padding: 30px;
+      border-top: 6px solid var(--orange);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .auth-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .auth-header img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    .auth-header h3 {
+      font-size: 1.45rem;
+      font-weight: 800;
+    }
+
+    .auth-header p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .auth-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--gray-bg);
+      padding: 4px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+
+    .auth-tab {
+      padding: 9px;
+      border: none;
+      background: transparent;
+      font-weight: 800;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .auth-tab.active {
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .auth-msg {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #d93025;
+      margin-bottom: 10px;
+      text-align: center;
+      min-height: 20px;
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--black);
+      color: var(--white);
+      border-left: 5px solid var(--orange);
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      z-index: 1200;
+      transition: transform 0.3s ease;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 860px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span>DOVELLE ABA</span> • Order. Pay. We Deliver • Serving Aba, Abia State Residents Only • Pay Before Delivery
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="brand">
+      <img src="icon.jpg" alt="DOVELLE Logo" />
+      <div class="brand-text">
+        <h1>DOVELLE</h1>
+        <p>Order.Pay.We Deliver</p>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#menu">Food Menu</a>
+      <a href="#windows">Delivery Windows</a>
+      <a href="#zones">Delivery Zones</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <div id="userStatusArea">
+        <button class="btn btn-outline" onclick="openAuthModal('register')">Create Account</button>
+      </div>
+      <button class="btn btn-orange" onclick="openBag()">
+        🛒 Order Bag <span class="cart-badge" id="bagCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div>
+        <span class="hero-badge">Trusted & Tested Fast Food • Aba, Abia State</span>
+        <h2>Welcome to <span>DOVELLE</span></h2>
+        <div class="hero-slogan">Order.Pay.We Deliver</div>
+        <div class="hero-description">
+          DOVELLE is a fast and reliable fast food restaurant where custormers order food online and pay before delivery.DOVELLE is a trusted and tested fast food restaurant servering only ABA,ABIA STATE residents in some specific zones such as;Omenazu,Umungasi,Umule,Brass,Faulks road,Osusu,Asa road,Azikiwe,Oghor hill,Umuola,Aba-owerri road,MCC,Abayi,umuimo,Factory road,Cemetery road,Okigwe road.DOVELLE has made it easier for residents to order rich foods in an afforable way.We advice you to feel free to place your order and we garrantee fast delivery and in a well package way.Taste and see for yourself.<br />
+          <strong>We are expecting your order.</strong>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-orange">Explore Our Menu</a>
+          <button class="btn btn-outline" style="border-color: #fff; color: #111;" onclick="openAuthModal('register')">Create Free Account</button>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="icon.jpg" alt="DOVELLE Icon" />
+        <h3>DOVELLE Fast Food</h3>
+        <p>Rich, hygienic, affordable meals delivered hot to your doorstep in Aba.</p>
+        <div class="trust-pills">
+          <div class="trust-pill">✔ Fast Delivery</div>
+          <div class="trust-pill">✔ Well Packaged</div>
+          <div class="trust-pill">✔ Affordable Prices</div>
+          <div class="trust-pill">✔ Aba Residents Only</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY WINDOWS (BOLDLY WRITTEN) -->
+  <section class="windows-section" id="windows">
+    <div class="section-header">
+      <h2><strong>DELIVERY <span>WINDOWS</span></strong></h2>
+      <p><strong>Please take note of our strict daily ordering and delivery schedules!</strong></p>
+    </div>
+
+    <div class="windows-grid">
+      <div class="window-box">
+        <span class="tag">Window 1</span>
+        <h3><strong>LUNCH DELIVERY WINDOW</strong></h3>
+        <p><strong>Orders opens by <span>9:00am</span> and closes by <span>11:00am</span></strong></p>
+        <p><strong>Delivery starts by <span>12:00pm</span> and closes by <span>2:00pm</span></strong></p>
+      </div>
+
+      <div class="window-box">
+        <span class="tag">Window 2</span>
+        <h3><strong>DINNER DELIVERY WINDOW</strong></h3>
+        <p><strong>Orders opens by <span>3:30pm</span> and closes by <span>5:00pm</span></strong></p>
+        <p><strong>Delivery starts by <span>6:00pm</span> and closes by <span>7:30pm</span></strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD MENU SECTION -->
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <h2>Our Rich & Affordable <span>Menu</span></h2>
+      <p>Create an account or log in with your username and password to add meals to your Order Bag.</p>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Menu items rendered dynamically via JS with exact image filenames -->
+    </div>
+  </section>
+
+  <!-- DELIVERY ZONES & PRICES SECTION -->
+  <section class="zones-section" id="zones">
+    <div class="section-header">
+      <h2>Delivery <span>Zones & Prices</span></h2>
+      <p>We deliver exclusively to these 4 zones across Aba, Abia State.</p>
+    </div>
+
+    <div class="zones-grid">
+      <div class="zone-card">
+        <div class="zone-card-header">
+          <h3>Zone 1</h3>
+          <span class="zone-price">₦500</span>
+        </div>
+        <p>Omenazu, Umungasi, Umule, Brass, Faulks road, Osusu</p>
+      </div>
+
+      <div class="zone-card">
+        <div class="zone-card-header">
+          <h3>Zone 2</h3>
+          <span class="zone-price">₦700</span>
+        </div>
+        <p>Aba-owerri road, MCC, Abayi, umuimo, Factory road</p>
+      </div>
+
+      <div class="zone-card">
+        <div class="zone-card-header">
+          <h3>Zone 3</h3>
+          <span class="zone-price">₦1,000</span>
+        </div>
+        <p>Cemetery road, Okigwe road</p>
+      </div>
+
+      <div class="zone-card">
+        <div class="zone-card-header">
+          <h3>Zone 4</h3>
+          <span class="zone-price">₦1,200</span>
+        </div>
+        <p>Asa road, Azikiwe, Oghor hill, Umuola</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER & CONTACT -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="icon.jpg" alt="DOVELLE Logo" />
+        <h3>DOVELLE</h3>
+        <p style="color: var(--orange); font-weight: 800;">Order.Pay.We Deliver</p>
+        <p>Trusted and tested fast food restaurant serving Aba, Abia State residents with rich, well-packaged meals.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Official Contact & Support</h4>
+        <div class="contact-item">📘 Facebook: <a href="https://facebook.com" target="_blank">dovelle01</a></div>
+        <div class="contact-item">💬 WhatsApp Order Line: <a href="https://wa.me/2349031385720" target="_blank">09031385720</a></div>
+        <div class="contact-item">📞 Customer Care Line: <a href="tel:08028477983">08028477983</a></div>
+        <div class="contact-item">✉️ Email: <a href="mailto:dovelle70@gmail.com">dovelle70@gmail.com</a></div>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Quick Delivery Reminder</h4>
+        <div class="contact-item">🕘 <strong>Lunch:</strong> Order 9:00am–11:00am | Delivery 12:00pm–2:00pm</div>
+        <div class="contact-item">🕞 <strong>Dinner:</strong> Order 3:30pm–5:00pm | Delivery 6:00pm–7:30pm</div>
+        <div class="contact-item">💳 <strong>Policy:</strong> Pay before delivery</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 DOVELLE Fast Food Restaurant (Aba, Abia State). All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ORDER BAG DRAWER -->
+  <div class="drawer-overlay" id="bagDrawer">
+    <div class="order-bag">
+      <div>
+        <div class="bag-header">
+          <h3>🛒 Your Order Bag</h3>
+          <button class="close-btn" onclick="closeBag()">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItemsContainer">
+          <!-- Cart items injected here -->
+        </div>
+
+        <div class="checkout-form" id="checkoutSection">
+          <h4>Customer & Delivery Details</h4>
+
+          <div class="form-group">
+            <label for="custName">Full Name *</label>
+            <input type="text" id="custName" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="custPhone">Phone Number *</label>
+            <input type="tel" id="custPhone" placeholder="e.g. 08012345678" required />
+          </div>
+
+          <div class="form-group">
+            <label for="zoneSelect">Choose Your Delivery Zone *</label>
+            <select id="zoneSelect" onchange="handleZoneChange()">
+              <option value="">-- Select Your Zone in Aba --</option>
+              <option value="zone1">Zone 1 — ₦500 (Omenazu, Umungasi, Umule, Brass, Faulks road, Osusu)</option>
+              <option value="zone2">Zone 2 — ₦700 (Aba-owerri road, MCC, Abayi, umuimo, Factory road)</option>
+              <option value="zone3">Zone 3 — ₦1,000 (Cemetery road, Okigwe road)</option>
+              <option value="zone4">Zone 4 — ₦1,200 (Asa road, Azikiwe, Oghor hill, Umuola)</option>
+            </select>
+          </div>
+
+          <!-- Dynamic Zone Info Box -->
+          <div class="zone-preview-box" id="zonePreviewBox">
+            <div class="fee-line" id="zoneFeeDisplay">Delivery Price: ₦0</div>
+            <div class="places-line" id="zonePlacesDisplay">Areas covered: </div>
+          </div>
+
+          <div class="form-group" id="areaSelectGroup" style="display: none;">
+            <label for="areaSelect">Select Your Specific Area in Chosen Zone *</label>
+            <select id="areaSelect">
+              <option value="">-- Choose Area --</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="custAddress">Full Street Address (For Google Map Delivery) *</label>
+            <input type="text" id="custAddress" placeholder="e.g. No. 70 Omenazu street off Brass" required />
+          </div>
+
+          <div class="totals-box">
+            <div class="total-row">
+              <span>Food Subtotal:</span>
+              <span id="foodSubtotal">₦0</span>
+            </div>
+            <div class="total-row">
+              <span>Delivery Fee:</span>
+              <span id="deliveryFeeText">₦0</span>
+            </div>
+            <div class="total-row grand">
+              <span>Total to Pay:</span>
+              <span id="grandTotal">₦0</span>
+            </div>
+          </div>
+
+          <p class="pay-notice">Note: Payment is made before delivery. Clicking below sends your full order directly to DOVELLE WhatsApp (09031385720).</p>
+
+          <button class="btn btn-orange" style="width: 100%; padding: 14px; font-size: 1rem;" onclick="placeOrderOnWhatsApp()">
+            📲 Place Order on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREATE ACCOUNT / LOGIN MODAL (USERNAME & PASSWORD ONLY) -->
+  <div class="modal-overlay" id="authModal">
+    <div class="auth-card">
+      <button class="close-btn" style="position: absolute; top: 14px; right: 14px;" onclick="closeAuthModal()">✕</button>
+      <div class="auth-header">
+        <img src="icon.jpg" alt="DOVELLE Logo" />
+        <h3>DOVELLE Customer Access</h3>
+        <p>Create an account or sign in with your Username & Password to order food.</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabRegister" onclick="switchAuthTab('register')">Create Account</button>
+        <button class="auth-tab" id="tabLogin" onclick="switchAuthTab('login')">Login</button>
+      </div>
+
+      <div class="auth-msg" id="authMsg"></div>
+
+      <form id="authForm" onsubmit="handleAuthSubmit(event)">
+        <div class="form-group">
+          <label for="authUsername">Username *</label>
+          <input type="text" id="authUsername" placeholder="Choose a username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="authPassword">Password *</label>
+          <input type="password" id="authPassword" placeholder="Enter your password" required />
+        </div>
+
+        <button type="submit" class="btn btn-orange" style="width: 100%; padding: 13px;" id="authSubmitBtn">
+          Create Account & Start Ordering
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // 1. MENU DATA (Exact food names, prices, and exact image filenames provided)
+    const menuItems = [
+      {
+        id: 1,
+        name: "Fried rice and chicken",
+        price: 3000,
+        image: "fried rice and chiken.jpg",
+        desc: "Rich, savory Nigerian fried rice served with well-seasoned fried chicken."
+      },
+      {
+        id: 2,
+        name: "Jellof rice and chiken",
+        price: 3000,
+        image: "jellof rice and chiken.jpg",
+        desc: "Smoky party-style Jollof rice paired with crispy, juicy spiced chicken."
+      },
+      {
+        id: 3,
+        name: "Chiken-shawarma",
+        price: 4500,
+        image: "chicken shawarma.jpg",
+        desc: "Loaded creamy chicken shawarma wrapped fresh with crisp veggies and special sauce."
+      },
+      {
+        id: 4,
+        name: "Beef-shawarma",
+        price: 5000,
+        image: "beef shawarma.jpg",
+        desc: "Tender grilled beef strips rolled in warm flatbread with rich creamy dressing."
+      },
+      {
+        id: 5,
+        name: "Meat pie",
+        price: 1200,
+        image: "meat pie.jpg",
+        desc: "Golden baked flaky pastry filled with seasoned minced beef and potatoes."
+      },
+      {
+        id: 6,
+        name: "Chiken pie",
+        price: 1200,
+        image: "chicken pie.jpg",
+        desc: "Freshly baked buttery crust stuffed with rich, flavorful chicken filling."
+      },
+      {
+        id: 7,
+        name: "Bottle water",
+        price: 500,
+        image: "bottle water.jpeg",
+        desc: "Chilled, pure bottled table water to refresh your meal."
+      }
+    ];
+
+    // 2. DELIVERY ZONES DATA
+    const deliveryZones = {
+      zone1: {
+        name: "Zone 1",
+        price: 500,
+        places: ["Omenazu", "Umungasi", "Umule", "Brass", "Faulks road", "Osusu"]
+      },
+      zone2: {
+        name: "Zone 2",
+        price: 700,
+        places: ["Aba-owerri road", "MCC", "Abayi", "umuimo", "Factory road"]
+      },
+      zone3: {
+        name: "Zone 3",
+        price: 1000,
+        places: ["Cemetery road", "Okigwe road"]
+      },
+      zone4: {
+        name: "Zone 4",
+        price: 1200,
+        places: ["Asa road", "Azikiwe", "Oghor hill", "Umuola"]
+      }
+    };
+
+    // STATE
+    let cart = [];
+    let currentUser = localStorage.getItem("dovelle_current_user") || null;
+    let authMode = "register";
+    let pendingItemToAdd = null;
+
+    // INITIALIZE PAGE
+    window.onload = function () {
+      renderMenu();
+      updateUserUI();
+      renderCart();
+    };
+
+    // RENDER MENU CARDS
+    function renderMenu() {
+      const grid = document.getElementById("menuGrid");
+      grid.innerHTML = menuItems
+        .map(
+          (item) => `
+          <div class="food-card">
+            <div class="food-img-wrap">
+              <img src="${item.image}" alt="${item.name}" />
+              <span class="price-tag">₦${item.price.toLocaleString()}</span>
+            </div>
+            <div class="food-body">
+              <div>
+                <h3>${item.name}</h3>
+                <p>${item.desc}</p>
+              </div>
+              <button class="btn btn-orange" onclick="addToCart(${item.id})">
+                + Add to Order Bag
+              </button>
+            </div>
+          </div>
+        `
+        )
+        .join("");
+    }
+
+    // AUTHENTICATION (USERNAME & PASSWORD ONLY)
+    function updateUserUI() {
+      const area = document.getElementById("userStatusArea");
+      if (currentUser) {
+        area.innerHTML = `
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-weight:800; font-size:0.9rem; color:var(--black);">👤 ${currentUser}</span>
+            <button class="btn btn-black" style="padding:7px 12px; font-size:0.8rem;" onclick="logoutUser()">Logout</button>
+          </div>
+        `;
+      } else {
+        area.innerHTML = `
+          <button class="btn btn-outline" onclick="openAuthModal('register')">Create Account / Login</button>
+        `;
+      }
+    }
+
+    function openAuthModal(mode = "register") {
+      switchAuthTab(mode);
+      document.getElementById("authMsg").textContent = "";
+      document.getElementById("authModal").classList.add("active");
+    }
+
+    function closeAuthModal() {
+      document.getElementById("authModal").classList.remove("active");
+    }
+
+    function switchAuthTab(mode) {
+      authMode = mode;
+      document.getElementById("tabRegister").classList.toggle("active", mode === "register");
+      document.getElementById("tabLogin").classList.toggle("active", mode === "login");
+      document.getElementById("authSubmitBtn").textContent =
+        mode === "register" ? "Create Account & Start Ordering" : "Login to Order";
+      document.getElementById("authMsg").textContent = "";
+    }
+
+    function handleAuthSubmit(e) {
+      e.preventDefault();
+      const username = document.getElementById("authUsername").value.trim();
+      const password = document.getElementById("authPassword").value.trim();
+      const msgEl = document.getElementById("authMsg");
+
+      if (!username || !password) {
+        msgEl.textContent = "Please enter both username and password.";
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem("dovelle_users") || "{}");
+
+      if (authMode === "register") {
+        if (users[username.toLowerCase()]) {
+          msgEl.textContent = "Username already exists. Please login or choose another.";
+          return;
+        }
+        users[username.toLowerCase()] = { username, password };
+        localStorage.setItem("dovelle_users", JSON.stringify(users));
+        currentUser = username;
+        localStorage.setItem("dovelle_current_user", currentUser);
+        closeAuthModal();
+        updateUserUI();
+        showToast(`Account created! Welcome to DOVELLE, ${currentUser}!`);
+      } else {
+        const record = users[username.toLowerCase()];
+        if (!record || record.password !== password) {
+          msgEl.textContent = "Invalid username or password.";
+          return;
+        }
+        currentUser = record.username;
+        localStorage.setItem("dovelle_current_user", currentUser);
+        closeAuthModal();
+        updateUserUI();
+        showToast(`Welcome back, ${currentUser}!`);
+      }
+
+      document.getElementById("authForm").reset();
+
+      if (pendingItemToAdd !== null) {
+        const id = pendingItemToAdd;
+        pendingItemToAdd = null;
+        addToCart(id);
+      }
+    }
+
+    function logoutUser() {
+      currentUser = null;
+      localStorage.removeItem("dovelle_current_user");
+      updateUserUI();
+      showToast("You have logged out.");
+    }
+
+    // CART / ORDER BAG FUNCTIONS
+    function addToCart(itemId) {
+      if (!currentUser) {
+        pendingItemToAdd = itemId;
+        openAuthModal("register");
+        document.getElementById("authMsg").textContent =
+          "Create an account or login first before ordering food.";
+        return;
+      }
+
+      const product = menuItems.find((m) => m.id === itemId);
+      const existing = cart.find((c) => c.id === itemId);
+
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...product, qty: 1 });
+      }
+
+      renderCart();
+      showToast(`Added "${product.name}" to your Order Bag!`);
+    }
+
+    function changeQty(itemId, delta) {
+      const idx = cart.findIndex((c) => c.id === itemId);
+      if (idx === -1) return;
+
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById("cartItemsContainer");
+      const badge = document.getElementById("bagCount");
+      const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+      badge.textContent = totalQty;
+
+      if (cart.length === 0) {
+        container.innerHTML = `<p style="text-align:center; color:#666; padding:20px 0; font-weight:600;">Your Order Bag is empty. Add food from the menu to start!</p>`;
+      } else {
+        container.innerHTML = cart
+          .map(
+            (item) => `
+            <div class="cart-item">
+              <div class="cart-item-info">
+                <h4>${item.name}</h4>
+                <p>₦${item.price.toLocaleString()} × ${item.qty} = ₦${(item.price * item.qty).toLocaleString()}</p>
+              </div>
+              <div class="qty-controls">
+                <button class="qty-btn" onclick="changeQty(${item.id}, -1)">-</button>
+                <span style="font-weight:800;">${item.qty}</span>
+                <button class="qty-btn" onclick="changeQty(${item.id}, 1)">+</button>
+              </div>
+            </div>
+          `
+          )
+          .join("");
+      }
+
+      updateTotals();
+    }
+
+    // ZONE SELECTION & AUTOMATIC CALCULATION
+    function handleZoneChange() {
+      const zoneKey = document.getElementById("zoneSelect").value;
+      const previewBox = document.getElementById("zonePreviewBox");
+      const feeDisplay = document.getElementById("zoneFeeDisplay");
+      const placesDisplay = document.getElementById("zonePlacesDisplay");
+      const areaGroup = document.getElementById("areaSelectGroup");
+      const areaSelect = document.getElementById("areaSelect");
+
+      if (!zoneKey || !deliveryZones[zoneKey]) {
+        previewBox.classList.remove("visible");
+        areaGroup.style.display = "none";
+        areaSelect.innerHTML = `<option value="">-- Choose Area --</option>`;
+        updateTotals();
+        return;
+      }
+
+      const zone = deliveryZones[zoneKey];
+      previewBox.classList.add("visible");
+      feeDisplay.textContent = `${zone.name} Delivery Fee: ₦${zone.price.toLocaleString()}`;
+      placesDisplay.textContent = `Places in ${zone.name}: ${zone.places.join(", ")}`;
+
+      areaGroup.style.display = "block";
+      areaSelect.innerHTML =
+        `<option value="">-- Choose Your Area in ${zone.name} --</option>` +
+        zone.places.map((place) => `<option value="${place}">${place}</option>`).join("");
+
+      updateTotals();
+    }
+
+    function updateTotals() {
+      const foodTotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      const zoneKey = document.getElementById("zoneSelect").value;
+      const deliveryFee = zoneKey && deliveryZones[zoneKey] ? deliveryZones[zoneKey].price : 0;
+      const grandTotal = foodTotal + deliveryFee;
+
+      document.getElementById("foodSubtotal").textContent = `₦${foodTotal.toLocaleString()}`;
+      document.getElementById("deliveryFeeText").textContent = `₦${deliveryFee.toLocaleString()}`;
+      document.getElementById("grandTotal").textContent = `₦${grandTotal.toLocaleString()}`;
+    }
+
+    // SEND ORDER DIRECTLY TO WHATSAPP (09031385720)
+    function placeOrderOnWhatsApp() {
+      if (!currentUser) {
+        openAuthModal("register");
+        return;
+      }
+
+      if (cart.length === 0) {
+        showToast("Please add at least one food item to your Order Bag.");
+        return;
+      }
+
+      const fullName = document.getElementById("custName").value.trim();
+      const phone = document.getElementById("custPhone").value.trim();
+      const zoneKey = document.getElementById("zoneSelect").value;
+      const selectedArea = document.getElementById("areaSelect").value;
+      const fullAddress = document.getElementById("custAddress").value.trim();
+
+      if (!fullName) {
+        showToast("Please enter your Full Name.");
+        return;
+      }
+      if (!phone) {
+        showToast("Please enter your Phone Number.");
+        return;
+      }
+      if (!zoneKey) {
+        showToast("Please select your Delivery Zone.");
+        return;
+      }
+      if (!selectedArea) {
+        showToast("Please choose your specific area in that zone.");
+        return;
+      }
+      if (!fullAddress) {
+        showToast("Please enter your full street address for Google Map delivery.");
+        return;
+      }
+
+      const zone = deliveryZones[zoneKey];
+      const foodTotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      const grandTotal = foodTotal + zone.price;
+
+      const itemsList = cart
+        .map(
+          (item, index) =>
+            `${index + 1}. ${item.name} (x${item.qty}) - ₦${(item.price * item.qty).toLocaleString()}`
+        )
+        .join("\n");
+
+      const message =
+        `*NEW FOOD ORDER - DOVELLE*\n` +
+        `_Order. Pay. We Deliver_\n\n` +
+        `*Account Username:* ${currentUser}\n` +
+        `*Customer Full Name:* ${fullName}\n` +
+        `*Phone Number:* ${phone}\n\n` +
+        `*ORDER ITEMS:*\n${itemsList}\n\n` +
+        `*DELIVERY DETAILS (ABA, ABIA STATE):*\n` +
+        `*Selected Zone:* ${zone.name} (₦${zone.price.toLocaleString()})\n` +
+        `*Selected Area:* ${selectedArea}\n` +
+        `*Full Address:* ${fullAddress}\n\n` +
+        `*Food Subtotal:* ₦${foodTotal.toLocaleString()}\n` +
+        `*Delivery Fee:* ₦${zone.price.toLocaleString()}\n` +
+        `*TOTAL AMOUNT TO PAY:* ₦${grandTotal.toLocaleString()}\n\n` +
+        `I am ready to make payment before delivery. Please confirm my order.`;
+
+      const whatsappNumber = "2349031385720";
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, "_blank");
+    }
+
+    function openBag() {
+      if (!currentUser) {
+        openAuthModal("register");
+        document.getElementById("authMsg").textContent =
+          "Create an account or login first to access your Order Bag.";
+        return;
+      }
+      document.getElementById("bagDrawer").classList.add("active");
+    }
+
+    function closeBag() {
+      document.getElementById("bagDrawer").classList.remove("active");
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById("toast");
+      toast.textContent = text;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
